@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# chkconfig: 3 90 15
+# description: Message Transfer Agent for SlipStream
+
+### BEGIN INIT INFO
+# Provides: sshd
+# Required-Start: $local_fs $network $syslog $slipstream
+# Required-Stop: $local_fs $syslog
+# Should-Start: $syslog
+# Should-Stop: $network $syslog
+# Default-Start: 2 3
+# Default-Stop: 0 1 6
+# Short-Description: Start up the SlipStream MTA server daemon
+# Description:       Message Transfer Agent to consume messages
+#                    from remote messaging queues and post them
+#                    to SlipStream.
+### END INIT INFO
+
+case "$1" in
+        start)
+                slipstream-mta start
+                ;;
+        stop)
+                slipstream-mta stop
+                ;;
+        restart)
+                slipstream-mta restart
+                ;;
+        status)
+                slipstream-mta status
+                ;;
+        *)
+                echo $"Usage: $0 {start|stop|restart|status}"
+esac

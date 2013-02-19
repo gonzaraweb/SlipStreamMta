@@ -1,0 +1,21 @@
+<assembly>
+	<id>bundle</id>
+
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<baseDirectory>${artifactId}</baseDirectory>
+
+	<formats>
+		<format>tar.gz</format>
+		<format>zip</format>
+	</formats>
+
+	<fileSets>
+		<fileSet>
+			<directory>src/</directory>
+			<outputDirectory>..</outputDirectory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

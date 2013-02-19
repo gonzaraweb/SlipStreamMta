@@ -1,0 +1,2 @@
+include etc/mta.cfg
+include etc/slipstream-mta
