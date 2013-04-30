@@ -6,41 +6,18 @@
 	<artifactId>SlipStreamMta</artifactId>
 	<packaging>pom</packaging>
 	<version>1.1-SNAPSHOT</version>
-	<name>SlipStreamMta</name>
+	<name>SlipStream MTA</name>
 	<url>http://sixsq.com/</url>
 
 	<parent>
 		<groupId>com.sixsq.slipstream</groupId>
 		<artifactId>SlipStream</artifactId>
-		<version>1.1</version>
+		<version>1.6-SNAPSHOT</version>
 	</parent>
 
-	<build>
-		<plugins>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<descriptors>
-						<descriptor>bundle.xml</descriptor>
-					</descriptors>
-				</configuration>
-
-				<executions>
-
-					<execution>
-						<id>bundle</id>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-				</executions>
-			</plugin>
-
-		</plugins>
-	</build>
+  <modules>
+    <module>code</module>
+    <module>rpm</module>
+  </modules>
 
 </project>
