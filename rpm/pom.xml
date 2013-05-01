@@ -123,6 +123,12 @@
 
 					</mappings>
 
+          <postinstallScriptlet>
+            <script>
+/sbin/chkconfig --add slipstream-mta
+            </script>
+          </postinstallScriptlet>
+
 				</configuration>
 
 				<executions>
