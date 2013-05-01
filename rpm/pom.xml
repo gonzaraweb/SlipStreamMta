@@ -65,7 +65,7 @@
 					<needarch>noarch</needarch>
 					<description>SlipStream Message Transfer Agent service</description>
 					<requires>
-						<require>python = 2.6</require>
+						<require>python &gt;= 2.6</require>
 						<require>slipstream-client &gt;= 1.3</require>
 						<require>python-dirq &gt;= 1.2</require>
 						<require>python-daemon &gt;= 1.5.4</require>
