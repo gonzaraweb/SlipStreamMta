@@ -108,6 +108,19 @@
 						</mapping>
 
 						<mapping>
+							<directory>/usr/bin</directory>
+							<filemode>755</filemode>
+							<username>root</username>
+							<groupname>root</groupname>
+							<directoryIncluded>false</directoryIncluded>
+							<sources>
+								<source>
+									<location>${project.build.directory}/dependency/bin/slipstream-mta</location>
+								</source>
+							</sources>
+						</mapping>
+
+						<mapping>
 							<directory>/etc/slipstream</directory>
 							<filemode>644</filemode>
 							<username>root</username>
