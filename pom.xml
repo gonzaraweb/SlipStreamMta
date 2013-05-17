@@ -20,4 +20,9 @@
     <module>rpm</module>
   </modules>
 
+  <scm>
+    <connection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</developerConnection>
+  </scm>
+
 </project>
