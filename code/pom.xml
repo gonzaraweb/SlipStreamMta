@@ -5,7 +5,6 @@
 	<groupId>com.sixsq.slipstream</groupId>
 	<artifactId>SlipStreamMta-bundle</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1-SNAPSHOT</version>
 	<name>SlipStream MTA bundle</name>
 	<url>http://sixsq.com/</url>
 

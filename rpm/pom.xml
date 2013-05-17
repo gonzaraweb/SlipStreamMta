@@ -5,7 +5,6 @@
 	<groupId>com.sixsq.slipstream</groupId>
 	<artifactId>SlipStreamMta-rpm</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1-SNAPSHOT</version>
 	<name>SlipStream MTA RPM</name>
 	<url>http://sixsq.com/</url>
 
@@ -52,7 +51,6 @@
 				<artifactId>rpm-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-					<version>${project.version}</version>
 					<classifier>${package.os}</classifier>
 					<release>${BUILD_NUMBER}.${package.os}</release>
 					<summary>SlipStream MTA</summary>
