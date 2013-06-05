@@ -4,7 +4,7 @@
 	<groupId>com.sixsq.slipstream</groupId>
 	<artifactId>SlipStreamMta</artifactId>
 	<packaging>pom</packaging>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<name>SlipStream MTA</name>
 	<url>http://sixsq.com/</url>
 
@@ -22,7 +22,7 @@
   <scm>
     <connection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>SlipStreamMta-1.2</tag>
   </scm>
 
 </project>
