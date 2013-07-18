@@ -5,7 +5,7 @@ import shutil
 import os
 from mock import Mock
 
-from mta.clients.SlipStreamClient import SlipStreamClient
+from sixsq_mta.clients.SlipStreamClient import SlipStreamClient
 from slipstream.ConfigHolder import ConfigHolder
 
 class SlipStreamClientTest(unittest.TestCase):

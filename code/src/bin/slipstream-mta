@@ -2,8 +2,8 @@
 
 import sys
 
-from mta import MTA
-from mta.daemon import DaemonRunner
+from sixsq_mta import MTA
+from sixsq_mta.daemon import DaemonRunner
 
 def main():
     try:

@@ -4,7 +4,7 @@ import unittest
 from mock import Mock
 
 from dirq.QueueSimple import QueueSimple
-from mta.clients.msg.DirectoryQueueClient import DirectoryQueueClient
+from sixsq_mta.clients.msg.DirectoryQueueClient import DirectoryQueueClient
 from slipstream.ConfigHolder import ConfigHolder
 
 class DirectoryQueueClientTest(unittest.TestCase):

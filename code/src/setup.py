@@ -36,7 +36,7 @@ def get_packages(basepkg_name, root_dir=''):
     os.chdir(cwd)
     return packages
 
-basepkg_name = 'com'
+basepkg_name = 'sixsq_mta'
 packages = get_packages(basepkg_name)
 
 setup(name='slipstream-mta',
@@ -44,4 +44,4 @@ setup(name='slipstream-mta',
       data_files=[('/etc/slipstream', ['etc/mta.cfg']),
                   ('/usr/bin', ['bin/slipstream-mta']),
                   ('/etc/init.d',['etc/slipstream-mta'])],
-      requires=['slipstream', 'boto', 'daemon', 'dirq'])
+      requires=['slipstream', 'boto', 'python-daemon', 'dirq'])

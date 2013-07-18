@@ -80,7 +80,7 @@
 								<source>
 									<location>${project.build.directory}/dependency</location>
 									<includes>
-										<include>mta/**/*</include>
+										<include>sixsq_mta/**/*</include>
 									</includes>
 									<excludes>
 										<exclude>**/*.pyc</exclude>
