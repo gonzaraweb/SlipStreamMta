@@ -44,4 +44,4 @@ setup(name='slipstream-mta',
       data_files=[('/etc/slipstream', ['etc/mta.cfg']),
                   ('/usr/bin', ['bin/slipstream-mta']),
                   ('/etc/init.d',['etc/slipstream-mta'])],
-      requires=['com.sixsq.slipstream', 'boto', 'daemon', 'dirq'])
+      requires=['slipstream', 'boto', 'daemon', 'dirq'])

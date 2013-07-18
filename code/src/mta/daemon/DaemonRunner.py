@@ -29,7 +29,7 @@ class DaemonRunner(BaseDaemonRunner):
                                             [(u'status', _status)])
 
     def __init__(self, Runnable):
-        """Runnable - subclass from com.sixsq.mta.daemon.DaemonRunnable.DaemonRunnable
+        """Runnable - subclass from mta.daemon.DaemonRunnable.DaemonRunnable
         to get required interface."""
 
         configHolder = Runnable.get_config_holder(

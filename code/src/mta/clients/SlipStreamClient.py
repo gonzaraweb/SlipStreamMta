@@ -1,6 +1,6 @@
 import base64
 
-from com.sixsq.slipstream.SlipStreamHttpClient import SlipStreamHttpClient
+from slipstream.SlipStreamHttpClient import SlipStreamHttpClient
 
 class SlipStreamClient(SlipStreamHttpClient):
     def __init__(self, configHolder):

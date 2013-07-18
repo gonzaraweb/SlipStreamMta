@@ -1,9 +1,9 @@
 import os
 import sys
 
-from com.sixsq.slipstream.ConfigHolder import ConfigHolder
+from slipstream.ConfigHolder import ConfigHolder
 
-from com.sixsq.mta.daemon import DaemonRunnable
+from mta.daemon import DaemonRunnable
 
 from .Logger import Logger
 from .clients import MsgClientFactory
