@@ -3,7 +3,7 @@ import sys
 
 from com.sixsq.slipstream.ConfigHolder import ConfigHolder
 
-from com.sixsq.daemon import DaemonRunnable
+from com.sixsq.mta.daemon import DaemonRunnable
 
 from .Logger import Logger
 from .clients import MsgClientFactory
