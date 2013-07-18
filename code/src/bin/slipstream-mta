@@ -3,7 +3,7 @@
 import sys
 
 from com.sixsq.mta import MTA
-from com.sixsq.daemon import DaemonRunner
+from com.sixsq.mta.daemon import DaemonRunner
 
 def main():
     try:
