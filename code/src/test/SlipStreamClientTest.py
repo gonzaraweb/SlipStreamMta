@@ -3,9 +3,10 @@ import unittest
 import base64
 import shutil 
 import os
+from mock import Mock
 
-from com.sixsq.mta.clients.SlipStreamClient import SlipStreamClient
-from com.sixsq.slipstream.ConfigHolder import ConfigHolder
+from mta.clients.SlipStreamClient import SlipStreamClient
+from slipstream.ConfigHolder import ConfigHolder
 
 class SlipStreamClientTest(unittest.TestCase):
     
@@ -13,6 +14,7 @@ class SlipStreamClientTest(unittest.TestCase):
         shutil.rmtree('%s/.cache/' % os.getcwd(), ignore_errors=True)
     
     def test_init(self):
+        SlipStreamClient._check_connection = Mock()
         ssc = SlipStreamClient(ConfigHolder({'username':base64.b64encode('user'), 
                                              'password':base64.b64encode('pass'), 
                                              'cookie_filename':'cookies'},

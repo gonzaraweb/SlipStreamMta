@@ -15,6 +15,7 @@ class DirqJsonMessages(QueueSimple):
 
 class DirectoryQueueClient(BaseClient):
     def __init__(self, configHolder):
+        self.log = None
         self.dirq_queue_umask = 0
         self.dirq_queue_polling_timeout = 60
         super(DirectoryQueueClient, self).__init__(configHolder)
