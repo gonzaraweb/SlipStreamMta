@@ -1,28 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.sixsq.slipstream</groupId>
-	<artifactId>SlipStreamMta</artifactId>
-	<packaging>pom</packaging>
-	<version>1.3-SNAPSHOT</version>
-	<name>SlipStream MTA</name>
-	<url>http://sixsq.com/</url>
-
-	<parent>
-		<groupId>com.sixsq.slipstream</groupId>
-		<artifactId>SlipStream</artifactId>
-		<version>1.8-SNAPSHOT</version>
-	</parent>
-
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.sixsq.slipstream</groupId>
+  <artifactId>SlipStreamMta</artifactId>
+  <packaging>pom</packaging>
+  <version>1.3-SNAPSHOT</version>
+  <name>SlipStream MTA</name>
+  <url>http://sixsq.com/</url>
+  
+  <parent>
+    <groupId>com.sixsq.slipstream</groupId>
+    <artifactId>SlipStream</artifactId>
+    <version>1.8-SNAPSHOT</version>
+  </parent>
+  
   <modules>
     <module>code</module>
-    <module>rpm</module>
   </modules>
 
+  <profiles>
+    <profile>
+      <id>build-mta-rpm</id>
+      <activation>
+        <file>
+          <exists>/usr/bin/rpmbuild</exists>
+        </file>
+      </activation>
+      <modules>
+        <module>rpm</module>
+      </modules>
+    </profile>
+  </profiles>
+  
   <scm>
     <connection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/slipstream/SlipStreamMta.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
-
+  
 </project>
